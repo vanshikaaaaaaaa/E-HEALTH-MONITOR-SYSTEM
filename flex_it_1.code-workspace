@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Documents/vs_code"
+		},
+		{
+			"path": "../../../../Documents/flex-it"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "flex-it"
+	}
+}

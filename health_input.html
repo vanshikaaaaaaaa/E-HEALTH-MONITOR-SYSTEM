@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Effects</title>
+  <link rel="stylesheet" href="health_input_css.css">
+ 
+</head>
+<body>
+    <div class="mahi_holder">
+        <div class="container">
+         
+          <div class="row bg_3">
+            <h2><i>Health Metric</i></h2>
+
+            <div class="col-3 input-effect">
+                <input id="sleep" class="effect-18" type="text" placeholder="">
+                <label> SLEEP MONITORING</label>
+                <span class="focus-border"></span>
+            </div>
+            
+
+            <div class="col-3 input-effect">
+              
+                <input id="water" class="effect-16" type="text" placeholder="">
+                <label>WATER TRACKER</label>
+                <span class="focus-border"></span>
+            </div>
+
+
+            <div class="col-3 input-effect">
+                <input id="steps" class="effect-17" type="text" placeholder="">
+
+                <label>STEP TRACKER</label>
+                <span class="focus-border"></span>
+            </div>
+
+
+            
+            <div class="col-3 input-effect">
+                <input id="height" class="effect-20" type="text" placeholder="">
+
+                <label>HEIGHT</label>
+                <span class="focus-border">
+                 
+                </span>
+            </div>
+
+
+            <div class="col-3 input-effect">
+                <input id="weight" class="effect-19" type="text" placeholder="">
+                <label> WEIGHT MANAGEMENT</label>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </div>
+
+
+            <div class="col-3 input-effect">
+                <input id="calories" class="effect-21" type="text" placeholder="">
+                <label>CALORIES INTAKE</label>
+                <span class="focus-border">
+                    <i></i>
+                </span>
+            </div>
+           
+           
+          </div>
+        </div>
+    </div>
+    <button id="generateBtn" type="button" class="btn btn-warning">Generate report</button>
+
+    <div class="report-section" style="display: none;">
+        <pre id="report"></pre>
+        <button id="downloadBtn">Download Report</button>
+    </div>
+    
+    <script src="health_input_js.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.13/jspdf.plugin.autotable.min.js"></script>
+
+    <script>
+        // This script block includes the function calls when the button is clicked
+        document.getElementById('generateBtn').addEventListener('click', generateReport);
+        document.getElementById('downloadBtn').addEventListener('click', downloadReport);
+    </script>
+</body>
+</html>
